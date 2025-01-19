@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: url('/sirusa.dat/img/resepsionis.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.594); 
+}
+
+.hero-section {
+  text-align: center;
+  padding: 70px;
+  background: rgba(255, 255, 255, 0.8); /* Transparansi untuk hero section */
+  color: white;
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(51, 51, 51, 0.9); /* Transparansi untuk navbar */
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo-text .si {
+  color: #f9f9f9;
+}
+
+.logo-text .rusa {
+  color: #a8e063;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a8e063;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 100px auto;
+}
+
+.login-container h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #56ab2f;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #56ab2f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #449d1f;
+}
+
+.register-link {
+  margin-top: 20px;
+  color: #333;
+}
+
+.register-link a {
+  color: #56ab2f;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.search-box {
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-box input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+  outline: none;
+  transition: width 0.3s;
+}
+
+.search-box input:focus {
+  width: 300px;
+}
+
+.search-box button {
+  padding: 15px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background: #a8e063;
+}
+
+.action-buttons {
+  margin-top: 40px;
+}
+
+.action-buttons button {
+  padding: 15px 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-daftar {
+  background-color: #56ab2f;
+  color: white;
+}
+
+.action-buttons button:hover {
+  background-color: #a8e063;
+  transform: scale(1.05);
+}

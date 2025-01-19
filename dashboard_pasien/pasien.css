@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #56ab2f;
+  color: white;
+  animation: slide-down 0.5s ease-in-out;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  font-size: 32px;
+  animation: text-glow 2s infinite alternate;
+}
+
+@keyframes text-glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+header p {
+  margin: 10px 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  background: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+header a:hover {
+  background: #a8e063;
+  box-shadow: 0 0 10px rgba(168, 224, 99, 0.8);
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  animation: fade-in 1s ease-in-out;
+}
+
+section h2 {
+  text-align: center;
+  color: #333;
+}
+
+section p, section td, section th {
+  font-size: 16px;
+  color: #333;
+}
+
+section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+section table, section table th, section table td {
+  border: 1px solid #ddd;
+}
+
+section table th, section table td {
+  text-align: left;
+  padding: 8px;
+}
+
+section table th {
+  background: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  animation: fade-in 1s ease-in-out;
+}
+
+form label {
+  font-size: 16px;
+  color: #333;
+}
+
+form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 250px;
+  transition: border-color 0.3s;
+}
+
+form select:focus {
+  border-color: #a8e063;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #56ab2f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background: #a8e063;
+  transform: scale(1.05);
+}
+#notification {
+  display: none;
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  animation: fade-in-slide-down 0.5s ease-in-out;
+}
+@keyframes fade-in-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
